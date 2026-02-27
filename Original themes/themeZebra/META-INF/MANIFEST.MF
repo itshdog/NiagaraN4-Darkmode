@@ -1,0 +1,77 @@
+Manifest-Version: 1.0
+Implementation-Version: 4.12.1.16
+Sealed: true
+Implementation-Vendor: Tridium
+
+Name: nss/theme.nss
+SHA-256-Digest: KE61097OwV9h//qOAVMaTVyHTHQNnHpr4FgJc9ycniw=
+
+Name: less/palette.less
+SHA-256-Digest: nueNi27ojbfsNN+y7WQPixbNWhGRn8MyYFwYiz4oeYI=
+
+Name: ux/theme.css
+SHA-256-Digest: l9yYJIX9/dsXLrCAi/5jeg+JVM6xOrtEafaidS3zwIg=
+
+Name: fonts/SourceSansPro-Light.otf.woff
+SHA-256-Digest: U/c5uZXyrUZYibduYAqP66xUX7hjF+MuGqjty6kp+n8=
+
+Name: less/hx.less
+SHA-256-Digest: UU3Bk4LgypyXjj4CaxPwQUKo3FhxEVhFFe0aZctrz84=
+
+Name: fonts/SourceSansPro-Semibold.otf.woff
+SHA-256-Digest: 0yvxUfB8+6PXLdQAnlit3rprdUByfZdrdEJe4i5AjqY=
+
+Name: less/contextMenu.less
+SHA-256-Digest: pN3O2nz0GZo9U51LgGsh3wfhzd6YYTCE8jMiueDLpXM=
+
+Name: fonts/SourceSansPro-Light.ttf
+SHA-256-Digest: JSja8/BY2rTTiWagUiiVmOiDMWDRJ+qxov3FIDBuIUA=
+
+Name: less/fonts.less
+SHA-256-Digest: hqg1TRkDUj1+2OQzneBMEvkXsIBxPpfz8Pwq7XQW3dM=
+
+Name: hx/theme.css
+SHA-256-Digest: xP6KMyu1PmDjXFzBEEZpohsEb9MhjvoScoQhIvxaG2A=
+
+Name: less/maps/ux.map
+SHA-256-Digest: DU78V5duQ9OdA7WcM71k+loZ8g674hxUGQFYPbbHk8w=
+
+Name: Gruntfile.js
+SHA-256-Digest: /0wPEAVLijNPAwX3AmhTrIPTaFr4kt3AqRIVb7NJd9w=
+
+Name: fx/theme.css
+SHA-256-Digest: C0C9N85sB/la0AtbqrE+cgAi9GmOL/SUvEz+Aq2LGUY=
+
+Name: less/maps/hx.map
+SHA-256-Digest: mTtCiUycR3IT23Q6qKzOMhsJWa6hnWsjKOBAO/8YowE=
+
+Name: cssTemplate.mustache
+SHA-256-Digest: +Am4Z9ZS6/BwM/j3ANQS1/4Uxr8YpsyB0ucdd4eoFzI=
+
+Name: fonts/LICENSE.txt
+SHA-256-Digest: kVAS3hX9waJ5lKV8lLrFltBQqF/V3tH7/PsOG/4SIos=
+
+Name: fonts/SourceSansPro-Semibold.ttf
+SHA-256-Digest: pl2O0PbPrmjGL3IBlvHnP8dAQQrDGznnVZir0RYGQBY=
+
+Name: fonts/SourceSansPro-Regular.otf.woff
+SHA-256-Digest: FUVkwg6zvTHIIS9plEgvWa39AFMb6VCbD1LTENYjsm4=
+
+Name: less/mixins.less
+SHA-256-Digest: FZfRgWKltM/n/VkvyuiYmXgM6O7HDq4l2OvPH2S2IRM=
+
+Name: less/ux.less
+SHA-256-Digest: vxRmiQVWK2P3ee5ZkGvytPPwiFjYG8cMtsfMsLfPV7Y=
+
+Name: package.json
+SHA-256-Digest: 38J9GVNxvjBvfHzvkk7feHC/aaR752rSugZCGHfsGJY=
+
+Name: fonts/SourceSansPro-Regular.ttf
+SHA-256-Digest: TDdJp0ljVttce8LpiZrFB1WBUZkY6IXDI+AyGjyv7AY=
+
+Name: sprite/sprite.css
+SHA-256-Digest: jUf0GzMjN8czed7rqtaWFP5MYP9zr7ggm6/SYfIKzKg=
+
+Name: META-INF/module.xml
+SHA-256-Digest: UrwclAnE7Kith6GO0q0VmbeOXVgV8TfnZg6LXcxnkBM=
+

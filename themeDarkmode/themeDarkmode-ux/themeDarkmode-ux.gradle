@@ -1,0 +1,38 @@
+/* Module Build File */
+
+description     = "Dark theme"
+ext {
+}
+niagaraModule {
+  moduleName = "themeDarkmode"
+  preferredSymbol = "tdm"
+  runtimeProfile = "ux"
+}
+
+dependencies {
+  compile "Tridium:nre:4.12"
+  compile "Tridium:baja:4.12"
+}
+
+moduleTestJar {
+  from('srcTest') {
+  }
+}
+
+jar {
+  from('src') {
+    include 'fonts/'
+    include 'fx/'
+    include 'hx/'
+    include 'imageOverrides/**/*.png'
+    include 'less/**/*.*'
+    include 'nss/'
+    include 'sprite/'
+    include 'ux/'
+  }
+  from ('.') {
+    include 'cssTemplate.mustache'
+    include 'Gruntfile.js'
+    include 'package.json'
+  }
+}

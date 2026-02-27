@@ -1,0 +1,923 @@
+/* @noSnoop */
+/**
+ * Zebra bajaux theme
+ */
+@font-face {
+  font-family: 'SourceSansPro';
+  font-weight: normal;
+  src: local('Source Sans Pro'), local('SourceSansPro'), local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url('/module/themeZebra/fonts/SourceSansPro-Regular.otf.woff') format('woff'), url('/module/themeZebra/fonts/SourceSansPro-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'SourceSansPro';
+  font-weight: bold;
+  src: local('Source Sans Pro Semibold'), local('SourceSansPro-Semibold'), url('/module/themeZebra/fonts/SourceSansPro-Semibold.otf.woff') format('woff'), url('/module/themeZebra/fonts/SourceSansPro-Semibold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'SourceSansPro';
+  font-weight: 100;
+  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url('/module/themeZebra/fonts/SourceSansPro-Light.otf.woff') format('woff'), url('/module/themeZebra/fonts/SourceSansPro-Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-weight: normal;
+  src: local('Source Sans Pro'), local('SourceSansPro'), local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url('/module/themeZebra/fonts/SourceSansPro-Regular.otf.woff') format('woff'), url('/module/themeZebra/fonts/SourceSansPro-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-weight: bold;
+  src: local('Source Sans Pro Semibold'), local('SourceSansPro-Semibold'), url('/module/themeZebra/fonts/SourceSansPro-Semibold.otf.woff') format('woff'), url('/module/themeZebra/fonts/SourceSansPro-Semibold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-weight: 100;
+  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url('/module/themeZebra/fonts/SourceSansPro-Light.otf.woff') format('woff'), url('/module/themeZebra/fonts/SourceSansPro-Light.ttf') format('truetype');
+}
+.ux-font-family-sans-serif {
+  font-family: "Source Sans Pro", SourceSansPro, Tahoma, "DejaVu Sans Condensed", "DejaVu Sans", "Nimbus Sans L", Arial, sans-serif;
+}
+.ux-font-family-monospace {
+  font-family: "Courier New", "DejaVu Sans Mono", monospace;
+}
+/*
+ Theme Rules for use with jquery.ContextMenu
+*/
+ul.context-menu-list {
+  -webkit-border-radius: 6px 6px 6px 6px;
+  -moz-border-radius: 6px 6px 6px 6px;
+  border-radius: 6px 6px 6px 6px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
+  background-color: #333333;
+  padding: 8px 12px;
+  border: 0;
+}
+ul.context-menu-list#_hxMenu .icon {
+  display: none;
+}
+ul.context-menu-list .context-menu-item {
+  background-color: #333333;
+  color: #ffffff;
+  font-family: "Source Sans Pro", SourceSansPro, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  margin-left: -12px;
+  padding-left: 14px;
+}
+ul.context-menu-list .context-menu-item .context-menu-item .icon {
+  display: none;
+}
+ul.context-menu-list .context-menu-item:hover {
+  background-color: #ebebeb;
+  color: #3d3d3d;
+  font-weight: normal;
+  margin-right: -12px;
+  padding-right: 14px;
+}
+ul.context-menu-list .context-menu-item.context-menu-disabled {
+  color: #a9a9a9;
+  background-color: #333333;
+}
+ul.context-menu-list .context-menu-submenu:after {
+  content: "\f0da";
+  font-family: "FontAwesome";
+  font-size: 16px;
+  color: #c1c1c1;
+  position: relative;
+  float: right;
+  height: 0;
+  padding-top: 1px;
+  clear: both;
+  z-index: 1;
+}
+ul.context-menu-list li.context-menu-item.context-menu-divider {
+  background: #9d9e95;
+}
+/* 
+  Applied at the root of a ux Web App. The fonts should be
+  specified here. Every other font reference in the app
+  should then use 'em' units so the font is relative to this size.
+*/
+.ux-root {
+  font-family: "Source Sans Pro", SourceSansPro, sans-serif;
+  font-size: 16px;
+  color: #4d4d4d;
+  background-color: #ffffff;
+}
+.ux-root input,
+.ux-root select,
+.ux-root button,
+.ux-root textarea {
+  font-family: "Source Sans Pro", SourceSansPro, sans-serif;
+}
+.ux-root input[type=color],
+.ux-root input[type=date],
+.ux-root input[type=datetime],
+.ux-root input[type=datetime-local],
+.ux-root input[type=email],
+.ux-root input[type=month],
+.ux-root input[type=number],
+.ux-root input[type=password],
+.ux-root input[type=search],
+.ux-root input[type=text],
+.ux-root input[type=time],
+.ux-root input[type=url],
+.ux-root textarea {
+  border-width: 0;
+  box-shadow: rgba(160, 160, 160, 0.75) 0 0 0 1px inset;
+  padding: 1px 3px;
+  outline: none;
+  -webkit-appearance: none;
+}
+.ux-root input[type=color][readonly],
+.ux-root input[type=date][readonly],
+.ux-root input[type=datetime][readonly],
+.ux-root input[type=datetime-local][readonly],
+.ux-root input[type=email][readonly],
+.ux-root input[type=month][readonly],
+.ux-root input[type=number][readonly],
+.ux-root input[type=password][readonly],
+.ux-root input[type=search][readonly],
+.ux-root input[type=text][readonly],
+.ux-root input[type=time][readonly],
+.ux-root input[type=url][readonly],
+.ux-root textarea[readonly],
+.ux-root input[type=color][disabled],
+.ux-root input[type=date][disabled],
+.ux-root input[type=datetime][disabled],
+.ux-root input[type=datetime-local][disabled],
+.ux-root input[type=email][disabled],
+.ux-root input[type=month][disabled],
+.ux-root input[type=number][disabled],
+.ux-root input[type=password][disabled],
+.ux-root input[type=search][disabled],
+.ux-root input[type=text][disabled],
+.ux-root input[type=time][disabled],
+.ux-root input[type=url][disabled],
+.ux-root textarea[disabled] {
+  background-color: #f2f2f2;
+  box-shadow: rgba(160, 160, 160, 0.5) 0 0 0 1px inset;
+}
+.ux-root select {
+  background-color: rgba(0, 0, 0, 0.05);
+  outline: none;
+}
+/* Button */
+.ux-btn {
+  background-color: #ffffff;
+  color: #105ccd;
+  border: 0;
+  margin: 0.35em 0.45em;
+  padding: 0.3em 2.5em;
+  -webkit-border-radius: 1em 1em 1em 1em;
+  -moz-border-radius: 1em 1em 1em 1em;
+  border-radius: 1em 1em 1em 1em;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  -moz-box-shadow: 0 2px 5px #808080;
+  -webkit-box-shadow: 0 2px 5px #808080;
+  box-shadow: 0 2px 5px #808080;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+}
+a.ux-btn {
+  text-decoration: underline;
+}
+.ux-btn:hover,
+.ux-btn:focus {
+  background-color: #ebebeb;
+  -moz-box-shadow: 0 2px 5px #808080, inset 0 0 2px 1px #f9f9f9;
+  -webkit-box-shadow: 0 2px 5px #808080, inset 0 0 2px 1px #f9f9f9;
+  box-shadow: 0 2px 5px #808080, inset 0 0 2px 1px #f9f9f9;
+}
+.ux-btn:active {
+  background-color: #105ccd;
+  color: #f9f9f9;
+  -moz-box-shadow: 0 0 2px #808080, inset 0 0 2px 0px #f9f9f9;
+  -webkit-box-shadow: 0 0 2px #808080, inset 0 0 2px 0px #f9f9f9;
+  box-shadow: 0 0 2px #808080, inset 0 0 2px 0px #f9f9f9;
+}
+.ux-btn:disabled,
+.ux-btn.ux-disabled {
+  background-color: #ffffff;
+  color: #a9a9a9;
+  -moz-box-shadow: 0 2px 5px #808080;
+  -webkit-box-shadow: 0 2px 5px #808080;
+  box-shadow: 0 2px 5px #808080;
+}
+.ux-btn:focus {
+  outline: 0;
+}
+.ux-btn.ux-toggled {
+  background-color: #f9f9f9;
+  -moz-box-shadow: inset 0 0 5px #808080;
+  -webkit-box-shadow: inset 0 0 5px #808080;
+  box-shadow: inset 0 0 5px #808080;
+}
+.ux-btn .icon img {
+  vertical-align: text-top;
+}
+/* Toolbar */
+.ux-tb {
+  background-color: #ebebeb;
+}
+/* Toolbar Buttons */
+.ux-btn-tb {
+  background-color: transparent;
+  color: #808080;
+  border: 0;
+  padding: 0.3em 0.6em;
+  margin: 0;
+  font-weight: bold;
+  font-size: smaller;
+  /* http://stackoverflow.com/a/5518143 */
+}
+.ux-btn-tb:focus {
+  border: 0;
+  outline: 0;
+}
+.ux-btn-tb:hover {
+  background-color: #ebebeb;
+}
+.ux-btn-tb:active {
+  background-color: #a9a9a9;
+  color: #3d3d3d;
+}
+.ux-btn-tb:disabled,
+.ux-btn-tb.ux-disabled {
+  background-color: transparent;
+  color: #c1c1c1;
+}
+.ux-btn-tb.ux-toggled {
+  background-color: #f9f9f9;
+  -moz-box-shadow: inset 0 0 4px #808080;
+  -webkit-box-shadow: inset 0 0 4px #808080;
+  box-shadow: inset 0 0 4px #808080;
+}
+.ux-btn-tb::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+.ux-btn-tb-default > span.display > span.icon > img {
+  padding-bottom: 2px;
+  border-bottom: 2px solid #105ccd;
+}
+.ux-btn-tb .displayName:empty {
+  visibility: hidden;
+}
+.ux-btn-tb .displayName:not(:empty) {
+  margin-left: 0.25em;
+}
+/* Toolbar Button Group */
+.ux-btn-tb-group {
+  white-space: nowrap;
+}
+.ux-btn-tb-group > .ux-btn-tb {
+  min-height: 26px;
+}
+.ux-btn-tb-group > .ux-btn-tb:hover {
+  background-color: #ebebeb;
+}
+.ux-btn-tb-group > .ux-btn-tb:active {
+  background-color: #a9a9a9;
+  color: #3d3d3d;
+}
+.ux-btn-tb-group > .ux-btn-tb:disabled {
+  background-color: transparent;
+  color: #c1c1c1;
+}
+/* select dropdowns */
+.ux-select {
+  border: 0;
+  background-color: #ebebeb;
+  color: #4d4d4d;
+  font-size: 16px;
+}
+.ux-select:hover {
+  color: #105ccd;
+}
+.ux-select > .ux-option {
+  background-color: #696f79;
+  color: #f9f9f9;
+}
+.ux-select > .ux-option:hover {
+  background-color: #ffffff;
+  color: #105ccd;
+}
+/* A window that might contain a Web App*/
+.ux-window {
+  -webkit-border-radius: 15px 15px 15px 15px;
+  -moz-border-radius: 15px 15px 15px 15px;
+  border-radius: 15px 15px 15px 15px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  -moz-box-shadow: 0 0 5px #808080;
+  -webkit-box-shadow: 0 0 5px #808080;
+  box-shadow: 0 0 5px #808080;
+}
+/* Foreground styling */
+.ux-fg {
+  background-color: #ffffff;
+  color: #4d4d4d;
+}
+/* Background styling */
+.ux-bg {
+  background-color: #696f79;
+  color: #ebebeb;
+}
+/* Highlight something */
+.ux-highlight,
+input.ux-highlight,
+textarea.ux-highlight,
+button.ux-highlight,
+select.ux-highlight,
+a.ux-highlight {
+  color: blue;
+}
+.ux-highlight:hover,
+input.ux-highlight:hover,
+textarea.ux-highlight:hover,
+button.ux-highlight:hover,
+select.ux-highlight:hover,
+a.ux-highlight:hover {
+  color: #6C6CFF;
+}
+.ux-highlight:disabled,
+input.ux-highlight:disabled,
+textarea.ux-highlight:disabled,
+button.ux-highlight:disabled,
+select.ux-highlight:disabled,
+a.ux-highlight:disabled {
+  color: #4d4d4d;
+}
+/* A border */
+.ux-border {
+  border: solid lightGrey 1px;
+}
+.ux-border-top {
+  border-top: solid lightGrey 1px;
+}
+.ux-border-bottom {
+  border-bottom: solid lightGrey 1px;
+}
+.ux-border-left {
+  border-left: solid lightGrey 1px;
+}
+.ux-border-right {
+  border-right: solid lightGrey 1px;
+}
+/* Shadow effects */
+.ux-shadow {
+  -moz-box-shadow: 0 0 5px #808080;
+  -webkit-box-shadow: 0 0 5px #808080;
+  box-shadow: 0 0 5px #808080;
+}
+.ux-shadow-inset {
+  -moz-box-shadow: inset 0 0 5px #808080;
+  -webkit-box-shadow: inset 0 0 5px #808080;
+  box-shadow: inset 0 0 5px #808080;
+}
+/* Table */
+.ux-table .ux-table-head th,
+.ux-table .ux-table-head .ux-table-head-cell {
+  background-color: #ebebeb;
+  color: #4d4d4d;
+  font-weight: normal;
+  font-size: 1em;
+}
+.ux-table .ux-table-head tr,
+.ux-table .ux-table-head .ux-table-head-row {
+  border-color: #ebebeb;
+}
+.ux-table .ux-table-row {
+  background-color: #ffffff;
+  border: 1px solid #ebebeb;
+}
+.ux-table .ux-table-row:hover {
+  background-color: #ebebeb;
+  border-color: #ebebeb;
+}
+.ux-table .ux-table-row.alt {
+  background-color: #f7f7f7;
+  border-color: #e3e3e3;
+}
+.ux-table .ux-table-row.alt:hover {
+  background-color: #e3e3e3;
+  border-color: #e3e3e3;
+}
+.ux-table .ux-table-row.selected {
+  background-color: rgba(0, 0, 128, 0.15);
+}
+.ux-table .ux-table-foot {
+  background-color: #ebebeb;
+}
+.ux-table:not(.no-stripe) .ux-table-row:nth-of-type(even),
+.ux-table:not(.no-stripe) .ux-table-row.even {
+  /* use alternating row color */
+  background-color: #f7f7f7;
+}
+.ux-table:not(.no-stripe) .ux-table-row:nth-of-type(even):hover,
+.ux-table:not(.no-stripe) .ux-table-row.even:hover {
+  background-color: #e3e3e3;
+}
+.ux-table:not(.no-stripe) .ux-table-row:nth-of-type(even).selected,
+.ux-table:not(.no-stripe) .ux-table-row.even.selected {
+  background-color: rgba(0, 0, 128, 0.15);
+}
+/*******************************************************************************
+ * TODO: everything below is webEditors-specific and should not be in this file
+ ******************************************************************************/
+/* Progress Bar */
+.ux-progress-bar {
+  background-image: linear-gradient(to top, #b0cbf5, #d9e8ff);
+}
+.js-dialog > .js-dialog-content {
+  font-size: 16px;
+}
+.WebShell > .WebShell-sidebar-left .TitlePane,
+#WebShell-content > .header > .header-contents select {
+  font-size: 14px;
+}
+.WebShell-nav-tree-container {
+  color: #4d4d4d;
+}
+.WebShell .terraced {
+  -webkit-border-radius: 10px 0 0 0;
+  -moz-border-radius: 10px 0 0 0;
+  border-radius: 10px 0 0 0;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.WebShell .terraced:not(:first-child) {
+  -moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.4);
+}
+.WebShell-content-container {
+  -webkit-border-radius: 15px 0 0 15px;
+  -moz-border-radius: 15px 0 0 15px;
+  border-radius: 15px 0 0 15px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.WebShell-sidebar-left > .split-pane-component {
+  background-color: #f9f9f9;
+}
+.WebShell-sidetogglebar .toggleSideBar {
+  -moz-box-shadow: 1px 1px 2px 0px #808080;
+  -webkit-box-shadow: 1px 1px 2px 0px #808080;
+  box-shadow: 1px 1px 2px 0px #808080;
+  -webkit-border-radius: 20em 20em 20em 20em;
+  -moz-border-radius: 20em 20em 20em 20em;
+  border-radius: 20em 20em 20em 20em;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  background-color: #424242;
+}
+.WebShell-sidetogglebar .toggleSideBar.hover {
+  background-color: #575757;
+}
+.WebShell-sidetogglebar .toggleSideBar.selected {
+  background-color: #f8f8f8;
+}
+.WebShell-sidetogglebar .toggleSideBar.selected:hover {
+  background-color: #d8d9db;
+}
+.TitlePane {
+  -webkit-border-radius: 10px 0 0 0;
+  -moz-border-radius: 10px 0 0 0;
+  border-radius: 10px 0 0 0;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.TitlePane > .header {
+  height: 36px;
+}
+.TitlePane > .content {
+  top: 36px;
+}
+.TitlePane > .header .header-contents {
+  background-color: #ffffff;
+  -moz-box-shadow: inset 0 -4px 1px -3px #e0e0e0;
+  -webkit-box-shadow: inset 0 -4px 1px -3px #e0e0e0;
+  box-shadow: inset 0 -4px 1px -3px #e0e0e0;
+}
+.TitlePane > .header .tab {
+  background-color: #ffffff;
+  font-size: 16px;
+  color: #3d3d3d;
+  font-weight: 100;
+  -moz-box-shadow: inset 0 -2px 2px -1px #105ccd, inset -1px 0 0 0 #e0e0e0;
+  -webkit-box-shadow: inset 0 -2px 2px -1px #105ccd, inset -1px 0 0 0 #e0e0e0;
+  box-shadow: inset 0 -2px 2px -1px #105ccd, inset -1px 0 0 0 #e0e0e0;
+}
+.TitlePane > .header .header-contents,
+.TitlePane > .header .tab:first-child {
+  -webkit-border-radius: 10px 0 0 0;
+  -moz-border-radius: 10px 0 0 0;
+  border-radius: 10px 0 0 0;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.editor.PropertySheet > .PropertySheet-table-container > table > thead > tr {
+  /* applying a border to tbody > tr, without a border on thead > tr, with 
+     width 100% causes a scroll bar */
+  border-width: 1px;
+  border-style: solid;
+}
+.PropertySheetRow-inline-expansion .PropertySheetRow:last-child {
+  border-bottom-width: 0;
+}
+.PropertySheetRow-inline-expansion .PropertySheet-table-container {
+  margin-top: -1px;
+}
+/* add box shadow to the first expanded row... */
+.PropertySheetRow-inline-expansion .PropertySheetRow .col-display,
+.PropertySheetRow-inline-expansion .PropertySheetRow .col-commands,
+.PropertySheetRow-inline-expansion .PropertySheetRow .col-spacer,
+.PropertySheetRow-inline-expansion .PropertySheet.slotmode .PropertySheetRow > td,
+.PropertySheetRow-inline-expansion .PropertySheet.tablet-portrait-up .PropertySheetRow > td {
+  -moz-box-shadow: inset 0px 10px 10px -10px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: inset 0px 10px 10px -10px rgba(0, 0, 0, 0.4);
+  box-shadow: inset 0px 10px 10px -10px rgba(0, 0, 0, 0.4);
+}
+/* if the first, non-expanded row is modified, just the modified shadow. */
+td.PropertySheetRow.modified > .col-display,
+td.PropertySheetRow.modified > .col-value,
+.PropertySheetRow-inline-expansion .PropertySheetRow ~ .PropertySheetRow.modified > .col-value {
+  -moz-box-shadow: inset 6px 0 0 -3px #e71919;
+  -webkit-box-shadow: inset 6px 0 0 -3px #e71919;
+  box-shadow: inset 6px 0 0 -3px #e71919;
+}
+/* ...but no box shadows on subsequent rows. (first-child won't work because 
+the first slot might be present but hidden. if hidden, it doesn't get the 
+PropertySheetRow class.) */
+.PropertySheet .PropertySheetRow ~ .PropertySheetRow > td,
+.PropertySheet .PropertySheetRow td.col-value,
+.PropertySheetRow-inline-expansion .PropertySheet .PropertySheetRow ~ .PropertySheetRow > td,
+.PropertySheetRow-inline-expansion .PropertySheet.tablet-portrait-up .PropertySheetRow ~ .PropertySheetRow > td {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+/* if we're expanded, and the first row, add the top edge shadow and the modified shadow. */
+.PropertySheetRow-inline-expansion .editor.PropertySheetRow.modified > .col-display {
+  -moz-box-shadow: inset 0px 10px 10px -10px rgba(0, 0, 0, 0.4), inset 6px 0 0 -3px #e71919;
+  -webkit-box-shadow: inset 0px 10px 10px -10px rgba(0, 0, 0, 0.4), inset 6px 0 0 -3px #e71919;
+  box-shadow: inset 0px 10px 10px -10px rgba(0, 0, 0, 0.4), inset 6px 0 0 -3px #e71919;
+}
+/* otherwise, just the modified shadow. */
+.editor.PropertySheetRow.modified > .col-display,
+.editor.PropertySheetRow ~ .editor.PropertySheetRow.modified > .col-display {
+  -moz-box-shadow: inset 6px 0 0 -3px #e71919;
+  -webkit-box-shadow: inset 6px 0 0 -3px #e71919;
+  box-shadow: inset 6px 0 0 -3px #e71919;
+}
+.editor.bajaux-readonly.type-baja-Value input,
+.editor.bajaux-disabled.type-baja-Value input,
+.editor.bajaux-readonly.type-baja-Value select,
+.editor.bajaux-disabled.type-baja-Value select,
+.editor.bajaux-readonly.type-baja-Value textarea,
+.editor.bajaux-disabled.type-baja-Value textarea {
+  background-color: #f2f2f2;
+  color: #777777;
+}
+.editor.bajaux-readonly.type-baja-Number .prelabel,
+.editor.bajaux-disabled.type-baja-Number .prelabel,
+.editor.bajaux-readonly.type-baja-Number .postlabel,
+.editor.bajaux-disabled.type-baja-Number .postlabel {
+  color: #777777;
+}
+.editor.bajaux-readonly.type-baja-Boolean label,
+.editor.bajaux-disabled.type-baja-Boolean label,
+.editor.bajaux-readonly .type-baja-Status > form label,
+.editor.bajaux-disabled .type-baja-Status > form label {
+  color: #777777;
+}
+.editor.type-baja-Boolean.type-baja-Boolean.-t-booleanEditor-slider .-t-booleanEditor-slider-wrapper {
+  flex-basis: 26px;
+}
+.editor.TableWidget.fixedHeaders {
+  background-color: #ebebeb;
+}
+.editor.TableWidget.fixedHeaders .tableContainer {
+  background-color: #ffffff;
+}
+/***********
+ * Scrollbar
+ **********/
+.WebShell ::-webkit-scrollbar,
+.js-dialog-container ::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.WebShell ::-webkit-scrollbar-track,
+.js-dialog-container ::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+.WebShell ::-webkit-scrollbar-thumb,
+.js-dialog-container ::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+}
+.WebShell ::-webkit-scrollbar-thumb:hover,
+.js-dialog-container ::-webkit-scrollbar-thumb:hover {
+  background-color: #bbb;
+  box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.75);
+}
+/*******************************************************************************
+ * TODO: everything below is webChart-specific and should not be in this file
+ ******************************************************************************/
+.webChart-menu-content .CommandButton .icon {
+  display: none;
+}
+.MenuWidget-container .webChart-menu div.CommandButton:hover {
+  background-color: #ededee;
+  color: #034398;
+}
+/*******************************************************************************
+ * HX Alarm Console Ux view css 
+ ******************************************************************************/
+form.hx > div > .alarmconsole-background {
+  background-color: #ffffff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.alarmConsole-title {
+  background-color: #ffffff;
+  color: #4d4d4d;
+  font-weight: normal;
+  font-size: 18px;
+}
+/*******************************************************************************
+ * ToggleButtonGroup CSS 
+ ******************************************************************************/
+.ux-toggle-btn-group {
+  text-align: center;
+}
+.ux-toggle-btn-group > button {
+  border-radius: 0;
+  margin: 0.25em 0.35em;
+  color: #000000;
+  background-color: #d3d3d3;
+}
+/* Tab Bar */
+.ux-tab-bar {
+  text-align: left;
+}
+.ux-tab-bar .ux-btn {
+  margin: 0;
+  -moz-box-shadow: -1px 0 0 0 #808080;
+  -webkit-box-shadow: -1px 0 0 0 #808080;
+  box-shadow: -1px 0 0 0 #808080;
+  border-radius: 0;
+  border-left: none;
+  text-decoration: none;
+}
+.ux-tab-bar .ux-btn:hover,
+.ux-tab-bar .ux-btn:focus {
+  -moz-box-shadow: -1px 0 0 0 #808080;
+  -webkit-box-shadow: -1px 0 0 0 #808080;
+  box-shadow: -1px 0 0 0 #808080;
+}
+.ux-tab-bar .ux-btn.ux-toggled {
+  color: #105ccd;
+  background: #ffffff;
+  border-bottom: solid #ffffff 1px;
+}
+/*********************
+  Pikaday Date editors
+*********************/
+.pika-lendar .pika-single {
+  font-family: 'SourceSansPro', Arial, sans-serif;
+}
+.pika-lendar .pika-row .pika-button {
+  background: #ffffff;
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+  color: #4d4d4d;
+  font-size: 11px;
+  height: 17px;
+  margin: 1px;
+  padding: 0;
+  text-align: center;
+}
+.pika-lendar .pika-row .pika-button:hover {
+  color: #105ccd;
+}
+.pika-lendar .pika-row .has-event .pika-button {
+  background: #3d3d3d;
+  color: #ffffff;
+}
+.pika-lendar .pika-row .has-event .pika-button:hover {
+  color: #5292f1;
+}
+.pika-lendar .pika-row .event-run-start {
+  position: relative;
+}
+.pika-lendar .pika-row .event-run-start .pika-button {
+  border-radius: 1em;
+}
+.pika-lendar .pika-row .event-run-start:not(.event-run-end):before {
+  display: block;
+  background: #3d3d3d;
+  content: '';
+  position: absolute;
+  top: 1px;
+  bottom: 1px;
+  width: 1em;
+  z-index: -1;
+  right: -2px;
+}
+.pika-lendar .pika-row .event-run-end {
+  position: relative;
+}
+.pika-lendar .pika-row .event-run-end .pika-button {
+  border-radius: 1em;
+}
+.pika-lendar .pika-row .event-run-end:not(.event-run-start):before {
+  display: block;
+  background: #3d3d3d;
+  content: '';
+  position: absolute;
+  top: 1px;
+  bottom: 1px;
+  width: 1em;
+  z-index: -1;
+  left: -2px;
+}
+.pika-lendar .pika-row .is-disabled .pika-button {
+  background: #f2f2f2;
+  color: #777777;
+}
+.pika-lendar .pika-row .is-selected .pika-button {
+  background: #7aa2de;
+}
+/********************
+  Scheduler
+********************/
+.DayEditor .day .blocksDisplay .block {
+  border-right: 1px solid black;
+  border-bottom: 1px solid #ccc;
+  background-color: #fcfcfc;
+}
+.DayEditor .day .blocksDisplay .block0 {
+  border-top: 1px solid black;
+}
+.DayEditor .day .blocksDisplay .block7 {
+  border-bottom: 1px solid black;
+}
+.DayEditor .day .blocksDisplay .block:before {
+  border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+.WeekEditor .weekdays .DayEditor:first-child .day .blocksDisplay .block {
+  border-left: 1px solid black;
+}
+.WeekEditor .weekdays .DayEditor:last-child .day .blocksDisplay .block {
+  border-right: 1px solid black;
+}
+.SpecialEventsEditor .calendarEventsTable thead {
+  background: #ebebeb;
+}
+.SpecialEventsEditor .DayEditor .day .blocksDisplay .block {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+@media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
+  .ux-btn {
+    border-radius: 0.5em 0.5em 0.5em 0.5em;
+  }
+}
+/********************
+  UxMedia
+********************/
+.ux-Button.bajaux-disabled button {
+  color: #848687;
+  text-shadow: 1px 1px #f9fae8;
+}
+.ux-Button > .ux-Button-outline.ux-Button-buttonStyle-normal {
+  border: 1px solid #f9f9f9;
+}
+.ux-Button > .ux-Button-outline.ux-Button-buttonStyle-normal > button {
+  background-color: #d0d0d0;
+  box-shadow: 0 0 0 1px #f9f9f9;
+  border-top: 1px solid #f9f9f9;
+  border-right: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  border-left: 1px solid #f9f9f9;
+}
+.ux-Button > .ux-Button-outline.ux-Button-buttonStyle-toolBar > button > .ux-Label > .ux-Label-content {
+  margin: 5px 8px;
+}
+.ux-Button:not(.bajaux-disabled) .ux-Button-buttonStyle-normal > button:active {
+  border-top-color: #000000;
+  border-left-color: #000000;
+}
+.ux-Button:not(.bajaux-disabled) .ux-Button-outline.ux-Button-buttonStyle-toolBar > button:hover {
+  box-shadow: inset 0 0 0 1px #9c9e95;
+  border-top: 1px solid #f7f7f7;
+  border-right: 1px solid #f7f7f7;
+  border-bottom: 1px solid #f7f7f7;
+  border-left: 1px solid #f7f7f7;
+}
+.ux-Button:not(.bajaux-disabled) .ux-Button-outline.ux-Button-buttonStyle-toolBar > button:hover .ux-Label > .ux-Label-content {
+  margin: 4px 7px;
+}
+.ux-TabbedPane .ux-TabbedPane-tabs .ux-TabbedPane-tab {
+  border-color: #c4c4c4;
+  border-style: solid;
+  padding: 7px;
+}
+.ux-TabbedPane .ux-TabbedPane-tabs .ux-TabbedPane-tab.ux-TabbedPane-tab-selected {
+  background-color: #f9f9f9;
+}
+.ux-TabbedPane .ux-TabbedPane-tabs .ux-TabbedPane-tab.ux-TabbedPane-tab-unselected {
+  background-color: #d9d9d9;
+}
+.ux-TabbedPane .ux-TabbedPane-tabs .ux-TabbedPane-tab-top {
+  border-width: 1px 1px 0 1px;
+  border-radius: 8px 8px 0 0;
+}
+.ux-TabbedPane .ux-TabbedPane-tabs .ux-TabbedPane-tab-bottom {
+  border-width: 0 1px 1px 1px;
+  border-radius: 0 0 8px 8px;
+}
+.ux-TabbedPane .ux-TabbedPane-tabs .ux-TabbedPane-tab-left {
+  border-width: 1px 0 1px 1px;
+  border-radius: 8px 0 0 8px;
+}
+.ux-TabbedPane .ux-TabbedPane-tabs .ux-TabbedPane-tab-right {
+  border-width: 1px 1px 1px 0;
+  border-radius: 0 8px 8px 0;
+}
+.ux-TabbedPane .ux-TabbedPane-content.ux-TabbedPane-content-paintFullBorder {
+  border: 1px solid #c4c4c4;
+}
+.ux-ToolTip {
+  background-color: #333333;
+  color: #ffffff;
+  font-family: "Source Sans Pro", SourceSansPro, sans-serif;
+  font-size: 16px;
+}
+.ux-PxWidget {
+  color: black;
+}
+.ux-SplitPane > .split-pane > .split-pane-divider {
+  background-color: #f9f9f9;
+}
+/********************
+  Wiresheet
+********************/
+.WebWiresheet {
+  background: #fff;
+}
+.WebWiresheet .ws-thumb-container {
+  border: 1px solid #3e402f;
+}
+.WebWiresheet .ws-thumb-overlay {
+  fill: rgba(127, 176, 205, 0.23);
+}
+.WebWiresheet .ws-root .ws-content-inner {
+  border-color: #3e402f;
+}
+.WebWiresheet .ws-root .ws-component-title-background {
+  background-image: #d0d0d0;
+}
+.WebWiresheet .ws-root .ws-component-selection {
+  stroke: #3e402f;
+}
+.WebWiresheet .ws-root .ws-component-border {
+  stroke: #3e402f;
+}
+.WebWiresheet .ws-root .ws-grid-pattern-rect {
+  stroke: #DDDDDD;
+}
+.WebWiresheet .ws-root .ws-title,
+.WebWiresheet .ws-root .ws-subtitle,
+.WebWiresheet .ws-root .ws-bar-display {
+  fill: #000000;
+  font-size: 10px;
+  font-family: "Source Sans Pro", SourceSansPro, sans-serif;
+}
+.WebWiresheet .ws-root .ws-title {
+  font-weight: bold;
+}
+/*# sourceMappingURL=/module/themeZebra/less/maps/ux.map */

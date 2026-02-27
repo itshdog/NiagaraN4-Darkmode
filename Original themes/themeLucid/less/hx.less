@@ -1,0 +1,107 @@
+@import (reference) './palette.less';
+@import (reference) './mixins.less';
+@import './contextMenu.less';
+
+/**
+ * Lucid hx theme
+ */
+
+textarea {
+  padding: 1px 2px;
+  line-height: 13px;
+}
+
+.hx-outer-content {
+  /* ensure fullscreen when position: absolute is applied */
+  .abs-position(56px, 0, 0, 0);
+  background-color: @bg-color;
+}
+
+.hx-outer-content.hx-outer-fullscreen{
+  .abs-position(0);
+}
+
+.hx-inner-content {
+  /* ensure fullscreen when position: absolute is applied */
+  .abs-position(5px);
+}
+
+table.table tr {
+  @row-bg: #ffffff;
+  @alt-row-bg: mix(@row-bg, #eceada);
+
+  & td {
+    background: @row-bg;
+  }
+
+  &:nth-of-type(even),
+  &.even {
+    & td {
+      /* use alternating row color */
+      background: @alt-row-bg;
+    }
+  }
+}
+
+.pxButtonNormal > .hxpx-background {
+  .horizontal-gradient();
+}
+
+.pxButtonToolbar.hxpx-toggled > .hxpx-background,
+.pxButtonNormal.hxpx-toggled > .hxpx-background {
+  .horizontal-gradient(#b4b5ac, #9d9e95); //from theme.nss #define button_selected
+}
+
+.pxButtonNormal > .hxpx-border {
+  border: 1px solid #3f4038;
+}
+
+.defaultNssFont{
+  .defaultNssFont();
+}
+.hxpx-button.defaultNssFont{
+  font-weight: bold;
+}
+
+.hxpx-button.defaultNssFont.hxpx-radioButton,
+.hxpx-button.defaultNssFont.hxpx-checkbox {
+  font-weight: normal;
+}
+
+.pxHighlight:hover > .hxpx-background{
+  background-color: @selection-background-color !important;
+}
+
+.pxHighlight:hover a > span{
+  color: white !important;
+}
+
+.pxOutline:hover > .hxpx-border{
+  border: 1px solid @selection-background-color !important;
+}
+
+
+/*******************************************************************************
+ * bajaux editors in HxPx views
+ ******************************************************************************/
+
+
+.hx-bajaux-fe {
+  .ux-select {
+    font-size: 11px;
+  }
+    
+  button.ux-btn-tb {
+    min-height: 22px;
+    padding: 0 3px;
+    
+    span.icon {
+      display: inline-block;
+      vertical-align: top;
+    }
+  }
+
+  .editor.type-baja-Boolean.type-baja-Boolean.-t-booleanEditor-slider .-t-booleanEditor-slider-wrapper {
+    flex-basis: 20px;
+  }
+}

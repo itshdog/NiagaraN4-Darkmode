@@ -1,0 +1,159 @@
+/* @noSnoop */
+/*
+ Theme Rules for use with jquery.ContextMenu
+*/
+.context-menu-root.hide-root-icons > .context-menu-item > span .icon.safe-to-hide.safe-to-hide {
+  margin-right: 5px;
+  display: inline-flex;
+}
+ul.context-menu-list {
+  background-color: #ffffff;
+  border: 1px solid #9d9e95;
+  border-radius: 0;
+  padding: 6px;
+}
+ul.context-menu-list .context-menu-item {
+  background-color: #ffffff;
+  color: #3d3d3d;
+  font-family: Tahoma, sans-serif;
+  font-size: 13px;
+}
+ul.context-menu-list .context-menu-item:hover {
+  background-color: #306bc2;
+  color: #f9f9f9;
+}
+ul.context-menu-list .context-menu-item.context-menu-disabled {
+  color: #a7a8a0;
+  background-color: #ffffff;
+}
+ul.context-menu-list .context-menu-item.context-menu-divider {
+  background: #9d9e95;
+}
+ul.context-menu-list .context-menu-submenu:after {
+  content: "";
+  width: 0;
+  height: 0;
+  display: inline-block;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid #3d3d3d;
+  position: relative;
+  float: right;
+  clear: both;
+  z-index: 1;
+  margin-top: 3px;
+}
+/**
+ * Lucid hx theme
+ */
+textarea {
+  padding: 1px 2px;
+  line-height: 13px;
+}
+.hx-outer-content {
+  /* ensure fullscreen when position: absolute is applied */
+  top: 56px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #ebe9d8;
+}
+.hx-outer-content.hx-outer-fullscreen {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.hx-inner-content {
+  /* ensure fullscreen when position: absolute is applied */
+  top: 5px;
+  right: 5px;
+  bottom: 5px;
+  left: 5px;
+}
+table.table tr td {
+  background: #ffffff;
+}
+table.table tr:nth-of-type(even) td,
+table.table tr.even td {
+  /* use alternating row color */
+  background: #f6f5ed;
+}
+.pxButtonNormal > .hxpx-background {
+  background: #d9e8ff;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #d9e8ff 0%, #b0cbf5 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #d9e8ff), color-stop(100%, #b0cbf5));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, #d9e8ff 0%, #b0cbf5 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, #d9e8ff 0%, #b0cbf5 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, #d9e8ff 0%, #b0cbf5 100%);
+  /* IE10+ */
+  background: linear-gradient(to right, #d9e8ff 0%, #b0cbf5 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d9e8ff', endColorstr='#b0cbf5', GradientType=1);
+  /* IE6-9 */
+}
+.pxButtonToolbar.hxpx-toggled > .hxpx-background,
+.pxButtonNormal.hxpx-toggled > .hxpx-background {
+  background: #b4b5ac;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #b4b5ac 0%, #9d9e95 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #b4b5ac), color-stop(100%, #9d9e95));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, #b4b5ac 0%, #9d9e95 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, #b4b5ac 0%, #9d9e95 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, #b4b5ac 0%, #9d9e95 100%);
+  /* IE10+ */
+  background: linear-gradient(to right, #b4b5ac 0%, #9d9e95 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b4b5ac', endColorstr='#9d9e95', GradientType=1);
+  /* IE6-9 */
+}
+.pxButtonNormal > .hxpx-border {
+  border: 1px solid #3f4038;
+}
+.defaultNssFont {
+  font-family: Tahoma, sans-serif;
+  font-size: 11px;
+}
+.hxpx-button.defaultNssFont {
+  font-weight: bold;
+}
+.hxpx-button.defaultNssFont.hxpx-radioButton,
+.hxpx-button.defaultNssFont.hxpx-checkbox {
+  font-weight: normal;
+}
+.pxHighlight:hover > .hxpx-background {
+  background-color: #306bc2 !important;
+}
+.pxHighlight:hover a > span {
+  color: white !important;
+}
+.pxOutline:hover > .hxpx-border {
+  border: 1px solid #306bc2 !important;
+}
+/*******************************************************************************
+ * bajaux editors in HxPx views
+ ******************************************************************************/
+.hx-bajaux-fe .ux-select {
+  font-size: 11px;
+}
+.hx-bajaux-fe button.ux-btn-tb {
+  min-height: 22px;
+  padding: 0 3px;
+}
+.hx-bajaux-fe button.ux-btn-tb span.icon {
+  display: inline-block;
+  vertical-align: top;
+}
+.hx-bajaux-fe .editor.type-baja-Boolean.type-baja-Boolean.-t-booleanEditor-slider .-t-booleanEditor-slider-wrapper {
+  flex-basis: 20px;
+}
+/*# sourceMappingURL=/module/themeLucid/less/maps/hx.map */

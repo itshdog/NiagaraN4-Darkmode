@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module name="themeDarkmode-ux" bajaVersion="0" vendor="Kirkwood" vendorVersion="1.0" description="Dark theme" preferredSymbol="tdm" nre="true" autoload="true" installable="true" buildMillis="1772145827908" buildHost="HWESTPHALZ1610" moduleName="themeDarkmode" runtimeProfile="ux">
+ <dependencies>
+  <dependency name="baja" vendor="Tridium" vendorVersion="4.12"/>
+ </dependencies>
+ <dirs/>
+ <defs>
+  <def name="themeName" value="themeDarkmode"/>
+ </defs>
+ <permissions>
+  <niagara-permission-groups type="all"/>
+  <niagara-permission-groups type="workbench"/>
+  <niagara-permission-groups type="station"/>
+ </permissions>
+</module>

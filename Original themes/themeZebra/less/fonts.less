@@ -1,0 +1,48 @@
+@import (reference) './mixins.less';
+
+@fonts-path: '/module/themeZebra/fonts/';
+
+.font-family() {
+  font-family: "Source Sans Pro", SourceSansPro, sans-serif;
+}
+
+.font-size(@val) {
+  font-size: ~"@{val}px";
+}
+
+.default-font() {
+  .font-family;
+  font-size:16px;
+}
+
+@font-face {
+  .font-face('SourceSansPro', @fonts-path, 'SourceSansPro-Regular', normal, ~"local('Source Sans Pro'), local('SourceSansPro'), local('Source Sans Pro Regular'), local('SourceSansPro-Regular')");
+}
+@font-face {
+  .font-face('SourceSansPro', @fonts-path, 'SourceSansPro-Semibold', bold, ~"local('Source Sans Pro Semibold'), local('SourceSansPro-Semibold')");
+}
+@font-face {
+  .font-face('SourceSansPro', @fonts-path, 'SourceSansPro-Light', 100, ~"local('Source Sans Pro Light'), local('SourceSansPro-Light')");
+}
+
+@font-face {
+  .font-face('Source Sans Pro', @fonts-path, 'SourceSansPro-Regular', normal, ~"local('Source Sans Pro'), local('SourceSansPro'), local('Source Sans Pro Regular'), local('SourceSansPro-Regular')");
+}
+@font-face {
+  .font-face('Source Sans Pro', @fonts-path, 'SourceSansPro-Semibold', bold, ~"local('Source Sans Pro Semibold'), local('SourceSansPro-Semibold')");
+}
+@font-face {
+  .font-face('Source Sans Pro', @fonts-path, 'SourceSansPro-Light', 100, ~"local('Source Sans Pro Light'), local('SourceSansPro-Light')");
+}
+
+.defaultNssFont() {
+  .font-family();
+  font-size: 12px;
+}
+
+.ux-font-family-sans-serif {
+  font-family: "Source Sans Pro", SourceSansPro, Tahoma, "DejaVu Sans Condensed", "DejaVu Sans", "Nimbus Sans L", Arial, sans-serif;
+}
+.ux-font-family-monospace {
+  font-family: "Courier New", "DejaVu Sans Mono", monospace;
+}

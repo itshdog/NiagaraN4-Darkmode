@@ -1,0 +1,55 @@
+@import (reference) './fonts.less';
+@import (reference) './palette.less';
+
+/*
+ Theme Rules for use with jquery.ContextMenu
+*/
+
+.context-menu-root.hide-root-icons > .context-menu-item > span .icon.safe-to-hide.safe-to-hide {
+  margin-right: 5px;
+  display: inline-flex;
+}
+
+ul.context-menu-list {
+
+  background-color: @context-menu-bg;
+  border: 1px solid @context-menu-border-color;
+  border-radius: 0;
+  padding: 6px;
+
+  .context-menu-item {
+    background-color: @context-menu-bg;
+    color: @context-menu-fg;
+
+    .default-font;
+
+    &:hover {
+      background-color: @selection-background-color;
+      color: @neutral-1;
+    }
+
+    &.context-menu-disabled {
+      color: @context-menu-disabled-fg;
+      background-color: @context-menu-bg;
+    }
+
+    &.context-menu-divider {
+      background: @context-menu-border-color;
+    }
+  }
+
+  .context-menu-submenu:after {
+    content: "";
+    width: 0;
+    height: 0;
+    display: inline-block;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid @context-menu-fg;
+    position: relative;
+    float: right;
+    clear: both;
+    z-index: 1;
+    margin-top: 3px;
+  }
+}

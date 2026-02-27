@@ -1,0 +1,254 @@
+.root {
+  lightBaseColor: #f6f4eb;
+  baseColor: #fffdec;
+  darkBaseColor: #ebe9d8;
+  darkestBaseColor: #a4a4a4;
+  pressedColor: #306bc2;
+  mainBackgroundColor: #696f79;
+  mainForegroundColor: #f9f9f9;
+  viewBackgroundColor: #ebe9d8;
+  viewForegroundColor: #ffffff;
+  dropShadowColor: #c8c8c8;
+  hoverColor: #306bc2;
+  scrollBarTrackColor: #a4a098;
+  scrollBarThumbColor: #c3d5fa;
+  -fx-base: baseColor;
+  -fx-font-family: "Tahoma";
+  -fx-font-size: 11px;
+  -fx-font-style: normal;
+}
+
+.menu,
+.menu-item,
+.button,
+.menu-button,
+.toggle-button,
+.split-menu-button {
+  -fx-font-size: 12px;
+  -fx-border-radius: 0;
+}
+
+.menu:hover,
+.button:hover,
+.menu-button:hover,
+.toggle-button:hover,
+.menu-item:hover,
+.split-menu-button:hover {
+  -fx-cursor: hand;
+}
+
+.tool-bar .button, 
+.tool-bar .menu, 
+.tool-bar .menu-item, 
+.tool-bar .menu-button,
+.tool-bar .toggle-button,
+.tool-bar .split-menu-button {
+  -fx-background-color: darkBaseColor;
+  -fx-border-color: transparent;
+  -fx-border-width: 1;
+}
+
+.tool-bar .button:focused,
+.tool-bar .menu-button:focused,
+.tool-bar .toggle-button:focused,
+.tool-bar .split-menu-button:focused {
+  -fx-border-color: darkestBaseColor;
+}
+
+.tool-bar .menu-item:focused {
+  -fx-background-color: hoverColor;
+}
+
+.tool-bar .menu-item:disabled {
+  -fx-background-color: transparent;
+}
+
+.tool-bar .button:hover, 
+.tool-bar .menu:hover, 
+.tool-bar .menu-item:hover, 
+.tool-bar .menu-button:hover,
+.tool-bar .toggle-button:hover,
+.tool-bar .split-menu-button:hover {
+  -fx-background-radius: 0;
+  /*-fx-effect: innershadow(two-pass-box, darkestBaseColor, 2, 1.0, 0, 0);*/
+  -fx-border-color: darkestBaseColor;
+  -fx-border-width: 1;
+}
+
+.menu:showing {
+  -fx-background-color: darkestBaseColor;
+}
+
+.tool-bar .button:pressed, 
+.tool-bar .menu:pressed, 
+.tool-bar .menu-item:pressed, 
+.tool-bar .menu-button:pressed,
+.tool-bar .toggle-button:pressed,
+.tool-bar .split-menu-button:pressed {
+  -fx-background-color: pressedColor;
+}
+
+.tool-bar .toggle-button:selected {
+  -fx-background-color: #cbcbcb;
+}
+
+/* Profile Menu Bar */
+
+#menu-bar-profile { /* MenuBar, same as .menu-bar class */
+  
+}
+
+#menu-bar-profile-background-container{ 
+	-fx-background-color: darkBaseColor; /* blends menu bar background with toolbar background*/
+}
+
+#menu-bar-profile-foreground-container { 
+  -fx-background-radius: 0 0 20 20; /* round bottom left and bottom right edges */
+  -fx-background-insets: 0 10 6 10; 	/* control spacing from outer container */
+  -fx-padding: 6 0 10 15; 	/* control spacing of child container (MenuBar) from this container */
+  -fx-background-color: lightBaseColor;
+  
+  /* dropshadow( <blur-type> , <color> , <radius> , <spread> , <offsetX> , <offsetY> )*/
+  -fx-effect: dropshadow(two-pass-box, rgb(0, 0, 0, 0.5), 6, 0.0, 0, 0);
+}
+
+/* Menu */
+#menu-bar-profile .menu {
+  -fx-padding : 4 10 4 10; /* controls space between Menu labels on MenuBar */
+  -fx-background-color: lightBaseColor;
+}
+
+/* controls color of the arrow on a sub-menu when it's hovered over or has focus */
+#menu-bar-profile .menu:focused:showing .arrow, 
+#menu-bar-profile .menu:hover:showing .arrow, 
+#menu-bar-profile .menu:focused .arrow, 
+#menu-bar-profile .menu:showing .arrow {
+    -fx-background-color: lightBaseColor;
+}
+
+#menu-bar-profile .menu:pressed {
+  -fx-background-color: pressedColor;
+}
+
+#menu-bar-profile .menu:hover,
+#menu-bar-profile .menu:showing,
+#menu-bar-profile .menu:focused {
+  -fx-background-color: hoverColor;
+}
+
+/*Menu-Item*/
+
+#menu-bar-profile .menu-item{
+	-fx-background-color: transparent;
+}
+		
+#menu-bar-profile .menu-item:focused {
+	-fx-background-color: hoverColor;
+}
+
+/* Profile Tool Bar */
+
+#tool-bar-profile {
+  -fx-background-color: darkBaseColor;
+  -fx-padding: 0 15 5 15;
+}
+
+#tool-bar-profile .separator {
+  -fx-orientation: vertical;
+  visibility: hidden;
+}
+
+#tool-bar-profile .tool-bar-group,
+#tool-bar-profile .tool-bar-group .button, 
+#tool-bar-profile .tool-bar-group .menu, 
+#tool-bar-profile .tool-bar-group .menu-item, 
+#tool-bar-profile .tool-bar-group .menu-button, 
+#tool-bar-profile .tool-bar-group .split-menu-button {
+  -fx-background-color: darkBaseColor;
+}
+
+#tool-bar-profile .tool-bar-group .button:hover, 
+#tool-bar-profile .tool-bar-group .menu:hover, 
+#tool-bar-profile .tool-bar-group .menu-item:hover, 
+#tool-bar-profile .tool-bar-group .menu-button:hover, 
+#tool-bar-profile .tool-bar-group .split-menu-button:hover {
+  -fx-background-color: darkestBaseColor;
+}
+
+#tool-bar-profile .tool-bar-group .button:pressed, 
+#tool-bar-profile .tool-bar-group .menu:pressed, 
+#tool-bar-profile .tool-bar-group .menu-item:pressed, 
+#tool-bar-profile .tool-bar-group .menu-button:pressed, 
+#tool-bar-profile .tool-bar-group .split-menu-button:pressed {
+  -fx-background-color: pressedColor;
+}
+
+#tool-bar-profile .tool-bar-group .menu:showing {
+  -fx-background-color: darkestBaseColor;
+}
+
+/*View profile*/
+#view-profile-foreground {
+	-fx-background-color: viewForegroundColor;
+	-fx-background-insets: 0;
+  -fx-border-width: 0;
+  -fx-border-insets: 0;
+}
+
+#view-profile-background {
+	-fx-background-color: viewBackgroundColor;
+	-fx-background-insets: 0;
+  -fx-border-color: #3f4038;
+  -fx-border-insets: 0;
+  -fx-border-width: 1;
+}
+
+/* Content profile */
+#content-profile-foreground{
+	-fx-background-color: mainForegroundColor;
+	-fx-background-insets: 0;
+  -fx-border-width: 0;
+  -fx-border-insets: 0;
+}
+
+#content-profile-background{
+	-fx-background-color: mainBackgroundColor;
+	-fx-background-insets: 0;
+  -fx-border-width: 0;
+  -fx-border-insets: 0;
+}
+
+/* Scrollbar track  */
+.scroll-bar:horizontal .track ,
+.scroll-bar:vertical .track{
+   -fx-background-color: scrollBarTrackColor;
+   -fx-border-color: black;
+   -fx-border-width:1;
+   -fx-background-radius: 0em;
+}
+
+ /* Scrollbar thumb */
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+  -fx-background-color:scrollBarThumbColor;
+  -fx-background-insets: 1, 1, 1;
+  -fx-background-radius: 0em;
+  -fx-border-width:1;
+  -fx-border-color: black;
+}
+
+/* Scrollbar increment/decrement buttons */
+.increment-button,
+.decrement-button {
+    -fx-background-color: scrollBarThumbColor;
+    -fx-border-width:1;
+    -fx-border-color: black;
+    -fx-background-insets: 1, 1, 1;
+}
+
+/* Scrollbar increment/decrement arrows */
+.increment-arrow,
+.decrement-arrow {
+    -fx-background-color:black;
+    -fx-border-color:black;
+}

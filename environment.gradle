@@ -1,0 +1,11 @@
+/*
+ * Copyright 2026 Kirkwood, All Rights Reserved.
+ */
+/* Environment Configuration File */
+
+// Change niagara_home and niagara_user_home as needed to point to the
+// correct path to your desired Niagara install and its associated
+// user home
+gradle.ext.niagara_dev_home = "C:/HW/CustomThemes"
+gradle.ext.niagara_home = "c:/jenesys/jenesys-probuilder-n4.12.1.16"
+gradle.ext.niagara_user_home = "C:/Users/k0417962/Niagara4.12/JENEsys"
