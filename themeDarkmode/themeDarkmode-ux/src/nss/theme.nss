@@ -33,7 +33,7 @@
 
 #define sideBarHeader = 
   lineargradient(
-    stop(0%, #b0cbf5) stop(33%, #bfdcff) stop(66%, #00ffff) stop(100%, #00ffff) );
+    stop(0%, #b0cbf5) stop(33%, #bfdcff) stop(66%, #373b40) stop(100%, #373b40) );
     
 
 //=============================================================================
@@ -407,10 +407,10 @@ button {
 //   NOTE: Use JavaFX to format main workbench Menu Bar (File, Edit, etc. ) elements by editing fx\theme.css
 //================================
 menu {
-  background-color: #2f2f2f;
+  background-color: #2b2b2b;
   outline: #333333;
   highlight: #333333; 
-  shadow: #393939;
+  shadow: #2b2b2b;
   padding: 0;
   opacity: 1;
 }
@@ -438,14 +438,15 @@ menu-bar {
 menu-item {
   font: 14pt sansserif;
   color: #eeeeee;
-  background-color: #2f2f2f;
+  background-color: #2b2b2b;
   padding:  4 14 4 12;         //default: 2 14 2 22
   icon-indent: 0;           //default: 2
   outline: #9c9c9c; //checkbox color
   
   .disabled {
-    shadow: #808080;
-    highlight: none;
+    shadow: #464646;
+    highlight: #2b2b2b;
+    color: #464646;
   }
 
   selection-color: #fff;
@@ -517,7 +518,7 @@ pane {
   //================================
   scroll-pane {
     padding: 0;            //default: 0 (and you want it that way)
-    background-color: #212121;
+    background-color: #323232;
     outline: none; //remove scroll pane border
     .sidebar-body { background-color: $treeBackground; }
     .sidebar-scroll-pane 
@@ -680,7 +681,7 @@ table {
   tree-table {
     connector-color: #353535;
     expander {
-      color: #00f;
+      color: #373b40;
     }
     .category-browser { band-color: #b5b5b5; }
   }

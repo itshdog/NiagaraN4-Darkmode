@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module name="themeDarkmode-ux" bajaVersion="0" vendor="Kirkwood" vendorVersion="1.0" description="Dark theme" preferredSymbol="tdm" nre="true" autoload="true" installable="true" buildMillis="1772145827908" buildHost="HWESTPHALZ1610" moduleName="themeDarkmode" runtimeProfile="ux">
+<module name="themeDarkmode-ux" bajaVersion="0" vendor="Kirkwood" vendorVersion="1.0" description="Dark theme" preferredSymbol="tdm" nre="true" autoload="true" installable="true" buildMillis="1772637075202" buildHost="HWESTPHALZ1610" moduleName="themeDarkmode" runtimeProfile="ux">
  <dependencies>
   <dependency name="baja" vendor="Tridium" vendorVersion="4.12"/>
  </dependencies>

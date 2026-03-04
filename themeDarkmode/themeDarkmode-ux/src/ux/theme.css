@@ -533,6 +533,12 @@ a.ux-highlight:disabled {
   -moz-background-clip: padding-box;
   background-clip: padding-box;
 }
+.editor {
+  color: #00f;
+}
+.editor.NavTree > .display {
+  color: #00f;
+}
 .editor.PropertySheet > .PropertySheet-table-container > table > thead > tr {
   /* applying a border to tbody > tr, without a border on thead > tr, with 
      width 100% causes a scroll bar */
