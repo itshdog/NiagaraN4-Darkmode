@@ -1,9 +1,7 @@
 # Installation
 
-File is located at
-
 ```
-themeDarkmode > themeDarkmode-ux.jar
+themeDarkmode-ux.jar
 ```
 
 Copy the .jar file into your Niagara modules directory
