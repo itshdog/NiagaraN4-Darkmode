@@ -8,3 +8,11 @@
 /dataSources.local.xml
 # Editor-based HTTP Client requests
 /httpRequests/
+
+# Gradle environment
+build.gradle
+environment.gradle
+gradlew
+gradlew.bat
+settings.gradle
+vendor.gradle
