@@ -1,9 +1,0 @@
-/*
- * Copyright 2026 Kirkwood, All Rights Reserved.
- */
-/* Vendor Configuration File */
-group = 'Kirkwood'
-
-def moduleVersion = '1.0'
-def moduleVersionPatch = [:]
-version = "${moduleVersion}${moduleVersionPatch.get(project.name, '')}"
