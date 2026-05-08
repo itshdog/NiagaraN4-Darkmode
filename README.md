@@ -24,7 +24,7 @@ If module does not show up, read log. Module potentially not signed or other iss
    
 3. Find where the files were created. Example: <path>\themeTest\themeTest-ux\<theme files>
 
-4. Once theme is ready, in IntelliJ terminal set directory to <path>
+4. Once theme is ready, in IntelliJ terminal set directory to .<path>
 
 5. Run ./gradlew :themeTest-ux:jar -- 
        Obviously with your theme name
